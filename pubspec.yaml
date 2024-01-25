@@ -62,6 +62,7 @@ flutter:
   assets:
     - assets/images/
     - assets/files/suras/
+    - assets/files/ahadeth.txt
   fonts:
     - family: Inter
       fonts:

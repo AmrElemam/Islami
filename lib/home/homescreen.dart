@@ -44,19 +44,19 @@ class _HomeScreenState extends State<HomeScreen> {
             BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
                 icon: const ImageIcon(AssetImage("assets/images/quran.png")),
-                label: "quran"),
+                label: "Quran"),
             BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
                 icon: const ImageIcon(AssetImage("assets/images/hadeth.png")),
-                label: "hadeth"),
+                label: "Hadeth"),
             BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
                 icon: const ImageIcon(AssetImage("assets/images/sebha.png")),
-                label: "sebha"),
+                label: "Sebha"),
             BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
                 icon: const ImageIcon(AssetImage("assets/images/radio.png")),
-                label: "radio"),
+                label: "Radio"),
           ],
         ),
         body: tabs[selectedTabIndex],

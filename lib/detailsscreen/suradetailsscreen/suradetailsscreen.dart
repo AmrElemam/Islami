@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:islami/detailsscreen/suradetailsscreen/verse.dart';
+import 'package:islami/detailsscreen/suradetailsscreen/suraverse.dart';
 
 class SuraDetailsScreen extends StatefulWidget {
   static const String routeName = "suraDetails";
@@ -32,6 +32,14 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
               ? const Center(child: CircularProgressIndicator())
               : Container(
                   decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 10,
+                          blurRadius: 10,
+                          offset: const Offset(0, 3),
+                        ),
+                      ],
                       color: const Color(0xCCF8F8F8),
                       borderRadius: BorderRadius.circular(25)),
                   margin: const EdgeInsets.all(20),
@@ -49,7 +57,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
   void loadfile(int index) async {
     String filecontect =
         await rootBundle.loadString("assets/files/suras/${index + 1}.txt");
-    verses = filecontect.split("\n");
+    verses = filecontect.trim().split("\n");
     setState(() {});
   }
 
