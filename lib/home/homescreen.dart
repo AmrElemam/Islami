@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> tabs = [
     const QuranTab(),
     const HadethTab(),
-    const SebhaTab(),
+    SebhaTab(),
     const RadioTab()
   ];
 
